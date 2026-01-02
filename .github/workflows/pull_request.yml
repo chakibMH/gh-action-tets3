@@ -1,0 +1,13 @@
+name: pull_request controller
+on:
+    pull_request:
+        types:
+            - opened
+        branches:
+            - main
+jobs:
+    CI-PullReq:
+        runs-on: ubuntu-latest
+        steps:
+            - name: worked
+              run: echo "worked"
